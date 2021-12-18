@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientCard</title>
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/ico">
+    <script src="jquery/jq.js"></script>
+    <script src="jqueryui/jquery-ui.min.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jqueryui/themes/sunny/theme.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="loginPage">
+        <div>
+            <label>Név:</label><br>
+            <input type="text" id="loginNameInput">
+        </div><br>
+        <div>
+            <label>Jelszó:</label><br>
+            <input type="password" id="loginPasswordInput"><br>
+        </div><br>
+        <div>
+            <input type="submit" value="BEJELENTKEZÉS" id="loginSend" onclick="encap.getLoginBlockSend()">
+            <input type="submit" value="NÉV/JELSZÓ ELLENŐRZÉSE FOLYAMATBAN, KÉREM VÁRJON!!!" id="loginSending">
+        </div>
+    </div>
+
+
+    <div class="main">
+
+        <script>
+            $(".main").hide();
+        </script>
+
+        <div class="menu1">
+
+            <div class="menu11">
+                <div class="111">LEKÉRDEZ</div>
+            </div>
+
+            <div class="menu12">
+                <div class="112">MÓDOSÍT</div>
+            </div>
+
+            <div class="menu13">
+                <div class="113">ÚJ KÁRTYA</div>
+            </div>
+
+            <div class="menu14">
+                <div class="114">TÖRÖL</div>
+            </div>
+
+        </div>
+
+        <div class="data0">
+
+            <div class="data1">
+
+                <div class="data10">
+                    <div></div>
+                </div>
+
+                <div class="data11">
+                    <label>Kártyaszám:</label>
+                    <div class="inputWidth" id="cardNumber"></div>
+                    <input class="inputWidth" type="text" id="cardNumberInput" onchange="encap.getQuestion()"><br>
+                </div>
+
+                <div class="data12">
+                    <label>Név:</label>
+                    <div class="inputWidth" id="name"></div>
+                    <input class="inputWidth" type="text" id="nameInput" maxlength="40"><br>
+                </div>
+
+                <div class="data13">
+                    <label>Születési dátum:</label>
+                    <div class="inputWidth" id="birthDate"></div>
+                    <input class="inputWidth" type="text" id="birthDateInput" maxlength="10"><br>
+                </div>
+
+                <div class="data14">
+                    <label>Cím:</label>
+                    <div class="inputWidth" id="address"></div>
+                    <input class="inputWidth" type="text" id="addressInput" maxlength="40"><br>
+                </div>
+
+                <div class="data15">
+                    <label>E-mail:</label>
+                    <div class="inputWidth" id="email"></div>
+                    <input class="inputWidth" type="email" id="emailInput" maxlength="40" onchange="encap.getMailValid()"><br>
+                </div>
+
+                <div class="data16">
+                    <label>Telefon:</label>
+                    <div class="inputWidth" id="tel"></div>
+                    <input class="inputWidth" type="tel" id="telInput" maxlength="25"><br>
+                </div>
+
+                <div class="data17">
+                    <label>Kártya érvényességének kezdete:</label>
+                    <div class="inputWidth" id="initialDate"></div>
+                    <input class="inputWidth" type="text" id="initialDateInput" maxlength="10"><br>
+                </div>
+
+                <div class="data18">
+                    <input class="send" type="submit" value="OK" id="dataSend" title="Ellenőrizze az adatokat, mielőtt az 'OK' gombra kattint!!!"><br>
+                    <input class="send" type="submit" value="Adatok küldése folyamatban, kérem várjon!!!" id="dataSending" title="Kérem, várjon!!!"><br>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

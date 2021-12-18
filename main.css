@@ -1,0 +1,190 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18pt;
+}
+
+#loginSend,
+#loginSending {
+    font-size: 12pt;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100%;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 80px;
+    padding: 10px;
+    background-color: black;
+    font-size: 10pt;
+}
+
+.data0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.data1 {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 100%;
+}
+
+.menu11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 80px;
+    background-color: #ffc14d;
+}
+
+.menu12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 80px;
+    background-color: #ffc14d;
+}
+
+.menu13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 80px;
+    background-color: #ffc14d;
+}
+
+.menu14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 80px;
+    background-color: #ffc14d;
+}
+
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inputWidth {
+    width: 250px;
+}
+
+.datablock {
+    width: 250px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+.data10,
+.data11,
+.data12,
+.data14,
+.data15,
+.data16 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.data13,
+.data17 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.data18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.send {
+    font-size: 22pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+    .main {
+        width: 80vw;
+    }
+    .menu1 {
+        width: 80vw;
+    }
+    .data1 {
+        width: 50vw;
+    }
+    .menu11 {
+        width: 20vw;
+    }
+    .menu12 {
+        width: 20vw;
+    }
+    .menu13 {
+        width: 20vw;
+    }
+    .menu14 {
+        width: 20vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .data0 {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        width: 100vw;
+    }
+    .menu1 {
+        width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .data1 {
+        width: 100vw;
+    }
+    .menu11 {
+        width: 25vw;
+    }
+    .menu12 {
+        width: 25vw;
+    }
+    .menu13 {
+        width: 25vw;
+    }
+    .menu14 {
+        width: 25vw;
+    }
+}
