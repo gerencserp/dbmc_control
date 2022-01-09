@@ -687,7 +687,7 @@ let encap = (function() {
     }
 
 
-    /* Authentication */
+    /* Check the valid format of the email address */
 
     function mailControl() {
         flashingColor = setTimeout(function() {
